@@ -1,8 +1,10 @@
-#include<stdio.h>
+#include<iostream>
+
+using namespace std;
 
 int main(){
-    int number, r, temp, sum = 0;
-    scanf("%d", &number);
+    int number, temp, r, sum = 0;
+    cin >> number;
 
     temp = number;
 
@@ -11,7 +13,7 @@ int main(){
         sum = sum + r*r*r;
         temp = temp / 10;
     }
-    printf("%d", sum);
+    cout << sum << endl;
 
     return 0;
 }
